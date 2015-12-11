@@ -9,17 +9,17 @@ import "math"
 const groups_number int = 4
 
 var _smallNumbers = []string{
-	"zero", "one", "two", "three", "four",
-	"five", "six", "seven", "eight", "nine",
-	"ten", "eleven", "twelve", "thirteen", "fourteen",
-	"fifteen", "sixteen", "seventeen", "eighteen", "nineteen",
+	"Zero", "One", "Two", "Three", "Four",
+	"Five", "Six", "Seven", "Eight", "Nine",
+	"Ten", "Eleven", "Twelve", "Thirteen", "Fourteen",
+	"Fifteen", "Sixteen", "Seventeen", "Eighteen", "Nineteen",
 }
 var _tens = []string{
-	"", "", "twenty", "thirty", "forty", "fifty",
-	"sixty", "seventy", "eighty", "ninety",
+	"", "", "Twenty", "Thirty", "Forty", "Fifty",
+	"Sixty", "Seventy", "Eighty", "Ninety",
 }
 var _scaleNumbers = []string{
-	"", "thousand", "million", "billion",
+	"", "Thousand", "Million", "Billion",
 }
 
 type digitGroup int
@@ -75,7 +75,7 @@ func digitGroup2Text(group digitGroup) (ret string) {
 	tensUnits := intMod(int(group), 100)
 
 	if hundreds != 0 {
-		ret += _smallNumbers[hundreds] + " hundred"
+		ret += _smallNumbers[hundreds] + " Hundred"
 
 		if tensUnits != 0 {
 			ret += " "
